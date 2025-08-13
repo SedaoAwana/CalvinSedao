@@ -25,47 +25,54 @@ const LandingPage = () => {
       icon: <Users className="w-6 h-6" />,
       title: "AI Engineering Teams",
       subtitle: "Senior LATAM talent that ships",
-  description: "Pre-vetted engineers who&apos;ve been through the hype cycles and know what actually works",
-      cta: "View Talent"
+      description: "Pre-vetted engineers who've been through the hype cycles and know what actually works",
+      cta: "Build Your Team"
+    },
+    {
+      icon: <Code className="w-6 h-6" />,
+      title: "Technical Strategy",
+      subtitle: "Cut through the AI hype",
+      description: "I've seen what works and what doesn't. Let me help you build what actually matters.",
+      cta: "Get Strategy"
+    },
+    {
+      icon: <MessageSquare className="w-6 h-6" />,
+      title: "Cultural Bridge",
+      subtitle: "US-LATAM team building",
+      description: "From Bronx to Ecuador, I understand both cultures and can help you build effective cross-border teams.",
+      cta: "Bridge Cultures"
     },
     {
       icon: <Coffee className="w-6 h-6" />,
       title: "Reality Checks",
       subtitle: "Free coffee chats",
-  description: "Let&apos;s talk about what you actually need vs. what you think you need",
+      description: "Let's talk about what you actually need vs. what you think you need",
       cta: "Book a Chat"
-    },
-    {
-      icon: <MessageSquare className="w-6 h-6" />,
-      title: "Speaking & Workshops",
-      subtitle: "No fluff, just experience",
-      description: "From crypto crashes to AI hype - lessons from the trenches",
-      cta: "Book Me"
     }
   ];
 
   const stats = [
-    { label: "Countries Lived", value: "5+", detail: "USA, Ecuador, Colombia, Peru, Mexico" },
-    { label: "Startups Helped", value: "50+", detail: "Seed to Series B" },
-    { label: "Engineers Placed", value: "200+", detail: "Across LATAM" },
-    { label: "Hype Cycles Survived", value: "2", detail: "Crypto & AI" }
+    { value: "50+", label: "Teams Built", detail: "Across LATAM" },
+    { value: "10+", label: "Years Experience", detail: "Startup to Scale" },
+    { value: "3", label: "Countries", detail: "US, Ecuador, Remote" },
+    { value: "100%", label: "Reality Based", detail: "No BS Approach" }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-md"></div>
-            <span className="font-bold text-xl">Calvin • Startup Sensei</span>
+            <span className="font-bold text-xl text-gray-900">Calvin • Startup Sensei</span>
           </div>
           <div className="hidden md:flex space-x-6 text-sm font-medium">
-            <a href="#journey" className="hover:text-blue-600 transition">Journey</a>
-            <a href="#services" className="hover:text-blue-600 transition">Services</a>
-            <a href="#insights" className="hover:text-blue-600 transition">Insights</a>
+            <a href="#journey" className="text-gray-700 hover:text-blue-600 transition">Journey</a>
+            <a href="#services" className="text-gray-700 hover:text-blue-600 transition">Services</a>
+            <a href="#insights" className="text-gray-700 hover:text-blue-600 transition">Insights</a>
             <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-              Let&apos;s Talk Reality
+              Let's Talk Reality
             </button>
           </div>
         </div>
@@ -80,16 +87,16 @@ const LandingPage = () => {
               Seattle → NYC → LATAM → Your Success
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold text-black mb-6 leading-tight">
               I went from a couch in the Bronx to building{' '}
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 AI teams across Latin America
               </span>
             </h1>
             
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Let me help you build without the BS. I&apos;ve been through the crypto crash and AI hype. 
-              I know what actually ships products and what&apos;s just expensive noise.
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+              Let me help you build without the BS. I've been through the crypto crash and AI hype. 
+              I know what actually ships products and what's just expensive noise.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -97,7 +104,7 @@ const LandingPage = () => {
                 Build Your Team
                 <ChevronRight className="ml-2 w-5 h-5" />
               </button>
-              <button className="px-6 py-3 border-2 border-slate-300 text-slate-700 rounded-md hover:border-blue-600 hover:text-blue-600 transition">
+              <button className="px-6 py-3 border-2 border-gray-400 text-gray-700 rounded-md hover:border-blue-600 hover:text-blue-600 transition">
                 Get a Reality Check (Free)
               </button>
             </div>
@@ -110,33 +117,63 @@ const LandingPage = () => {
       </section>
 
       {/* Journey Section */}
-      <section id="journey" className="py-20 bg-slate-50">
+      <section id="journey" className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">The Journey</h2>
-          <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-            Each stop taught me something about building teams, surviving hype, and what really matters in startups
-          </p>
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full text-sm font-medium mb-6">
+              <MapPin className="w-4 h-4 mr-2" />
+              My Path to Success
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+              The Journey
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Each stop taught me something about building teams, surviving hype, and what really matters in startups
+            </p>
+          </div>
           
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-600 to-purple-600"></div>
+            {/* Enhanced timeline line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-2 bg-gradient-to-b from-blue-600 via-purple-600 to-blue-600 rounded-full shadow-lg"></div>
             
             {journeyStops.map((stop, index) => (
               <div
                 key={index}
-                className={`relative flex items-center mb-12 ${
+                className={`relative flex items-center mb-16 ${
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 }`}
-                style={{ opacity: scrollY > index * 100 ? 1 : 0.5, transition: 'opacity 0.5s' }}
+                style={{ opacity: scrollY > index * 100 ? 1 : 0.6, transition: 'opacity 0.6s ease-in-out' }}
               >
                 <div className="flex-1"></div>
                 
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-4 border-blue-600 rounded-full z-10"></div>
+                {/* Enhanced timeline dot */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-blue-600 to-purple-600 border-4 border-white rounded-full z-10 shadow-lg hover:scale-110 transition-transform duration-300"></div>
                 
-                <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
-                  <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
-                    <h3 className="font-bold text-xl mb-1">{stop.city}</h3>
-                    <p className="text-sm text-slate-500 mb-2">{stop.year}</p>
-                    <p className="text-slate-700">{stop.lesson}</p>
+                <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-16' : 'md:pl-16'}`}>
+                  <div className={`bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 ${
+                    index % 2 === 0 ? 'md:text-right' : 'md:text-left'
+                  }`}>
+                    <div className={`flex items-center mb-4 ${
+                      index % 2 === 0 ? 'md:justify-end' : 'md:justify-start'
+                    }`}>
+                      {index % 2 === 0 ? (
+                        <>
+                          <h3 className="font-bold text-2xl text-gray-900 mr-3">{stop.city}</h3>
+                          <div className="w-3 h-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="w-3 h-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mr-3"></div>
+                          <h3 className="font-bold text-2xl text-gray-900">{stop.city}</h3>
+                        </>
+                      )}
+                    </div>
+                    <div className={`inline-block px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 rounded-full text-sm font-semibold mb-4 ${
+                      index % 2 === 0 ? 'md:ml-auto' : 'md:mr-auto'
+                    }`}>
+                      {stop.year}
+                    </div>
+                    <p className="text-lg text-gray-700 leading-relaxed font-medium">{stop.lesson}</p>
                   </div>
                 </div>
               </div>
@@ -152,8 +189,8 @@ const LandingPage = () => {
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">{stat.value}</div>
-                <div className="text-sm font-medium text-slate-900 mb-1">{stat.label}</div>
-                <div className="text-xs text-slate-500">{stat.detail}</div>
+                <div className="text-sm font-medium text-black mb-1">{stat.label}</div>
+                <div className="text-xs text-gray-700">{stat.detail}</div>
               </div>
             ))}
           </div>
@@ -163,12 +200,12 @@ const LandingPage = () => {
       {/* Services Section */}
       <section id="services" className="py-20 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">How I Can Help</h2>
-          <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-            Skip the hype. Build what matters. I&apos;ve been on both sides of the table.
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">How I Can Help</h2>
+          <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
+            Skip the hype. Build what matters. I've been on both sides of the table.
           </p>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -176,16 +213,16 @@ const LandingPage = () => {
                 onMouseEnter={() => setActiveCard(index)}
                 onMouseLeave={() => setActiveCard(null)}
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mb-4 text-white">
                   {service.icon}
                 </div>
                 
-                <h3 className="font-bold text-xl mb-2">{service.title}</h3>
-                <p className="text-sm text-blue-600 font-medium mb-3">{service.subtitle}</p>
-                <p className="text-slate-600 mb-4">{service.description}</p>
+                <h3 className="font-bold text-2xl mb-3 text-gray-900 leading-tight">{service.title}</h3>
+                <p className="text-sm text-blue-700 font-medium mb-3">{service.subtitle}</p>
+                <p className="text-gray-700 mb-4">{service.description}</p>
                 
                 <button className={`flex items-center text-sm font-medium transition ${
-                  activeCard === index ? 'text-blue-600' : 'text-slate-400'
+                  activeCard === index ? 'text-blue-700' : 'text-gray-600'
                 }`}>
                   {service.cta}
                   <ChevronRight className="ml-1 w-4 h-4" />
@@ -204,7 +241,7 @@ const LandingPage = () => {
             The Reality Stack™
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">
             Most startups get it backwards
           </h2>
           
@@ -221,7 +258,7 @@ const LandingPage = () => {
           </div>
           
           <button className="px-8 py-4 bg-white text-slate-900 rounded-md hover:bg-slate-100 transition font-medium">
-            Let&apos;s Talk Reality (It&apos;s Free)
+            Let's Talk Reality (It's Free)
           </button>
         </div>
       </section>
