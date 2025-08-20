@@ -25,14 +25,14 @@ const LandingPage = () => {
       icon: <Users className="w-6 h-6" />,
       title: "AI Engineering Teams",
       subtitle: "Senior LATAM talent that ships",
-      description: "Pre-vetted engineers who've been through the hype cycles and know what actually works",
+      description: "Pre-vetted engineers who&apos;ve been through the hype cycles and know what actually works",
       cta: "Build Your Team"
     },
     {
       icon: <Code className="w-6 h-6" />,
       title: "Technical Strategy",
       subtitle: "Cut through the AI hype",
-      description: "I've seen what works and what doesn't. Let me help you build what actually matters.",
+      description: "I&apos;ve seen what works and what doesn&apos;t. Let me help you build what actually matters.",
       cta: "Get Strategy"
     },
     {
@@ -46,7 +46,7 @@ const LandingPage = () => {
       icon: <Coffee className="w-6 h-6" />,
       title: "Reality Checks",
       subtitle: "Free coffee chats",
-      description: "Let's talk about what you actually need vs. what you think you need",
+      description: "Let&apos;s talk about what you actually need vs. what you think you need",
       cta: "Book a Chat"
     }
   ];
@@ -100,8 +100,8 @@ const LandingPage = () => {
             </h1>
             
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Let me help you build without the BS. I've been through the crypto crash and AI hype. 
-              I know what actually ships products and what's just expensive noise.
+              Let me help you build without the BS. I&apos;ve been through the crypto crash and AI hype. 
+              I know what actually ships products and what&apos;s just expensive noise.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -212,7 +212,7 @@ const LandingPage = () => {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black">How I Can Help</h2>
           <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
-            Skip the hype. Build what matters. I've been on both sides of the table.
+            Skip the hype. Build what matters. I&apos;ve been on both sides of the table.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -278,7 +278,7 @@ const LandingPage = () => {
             rel="noopener noreferrer"
             className="px-8 py-4 bg-white text-slate-900 rounded-md hover:bg-slate-100 transition font-medium"
           >
-            Let's Talk Reality (It's Free)
+            Let&apos;s Talk Reality (It&apos;s Free)
           </a>
         </div>
       </section>

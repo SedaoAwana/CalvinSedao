@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { ChevronRight, Zap, Users, Clock, CheckCircle, ArrowRight, Star, Target, Rocket } from 'lucide-react';
 
 const AIAcceleratorPage = () => {
@@ -27,7 +28,7 @@ const AIAcceleratorPage = () => {
       answer: "For core MVP development or building primary business functionality from scratch, please contact Calvin@awana.io directly. This program focuses on enhancing existing products with AI."
     },
     {
-      question: "What's the time commitment required?",
+      question: "What&apos;s the time commitment required?",
       answer: "Selected companies commit 2-3 hours per week for 3 months. This includes progress check-ins, answering questions, providing feedback, and removing any blockers for the students."
     }
   ];
@@ -98,11 +99,11 @@ const AIAcceleratorPage = () => {
             <span className="font-bold text-xl text-gray-900">Calvin • Startup Sensei</span>
           </div>
           <div className="hidden md:flex space-x-6 text-sm font-medium">
-            <a href="/" className="text-gray-700 hover:text-blue-600 transition">Home</a>
-            <a href="/#journey" className="text-gray-700 hover:text-blue-600 transition">Journey</a>
-            <a href="/#services" className="text-gray-700 hover:text-blue-600 transition">Services</a>
+            <Link href="/" className="text-gray-700 hover:text-blue-600 transition">Home</Link>
+            <Link href="/#journey" className="text-gray-700 hover:text-blue-600 transition">Journey</Link>
+            <Link href="/#services" className="text-gray-700 hover:text-blue-600 transition">Services</Link>
             <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-              Let's Talk Reality
+              Let&apos;s Talk Reality
             </button>
           </div>
         </div>
@@ -383,7 +384,7 @@ const AIAcceleratorPage = () => {
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Important Note</h3>
               <p className="text-gray-700">
-                This program enhances existing products/processes with AI. We don't build core MVPs or primary business functionality. 
+                This program enhances existing products/processes with AI. We don&apos;t build core MVPs or primary business functionality. 
                 If you need a prototype or an MVP, please contact <a href="mailto:Calvin@awana.io" className="text-blue-600 hover:underline">Calvin@awana.io</a>.
               </p>
             </div>
@@ -439,10 +440,10 @@ const AIAcceleratorPage = () => {
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Don't Miss This Opportunity
+            Don&apos;t Miss This Opportunity
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            AI is transforming industries. Don't let your startup fall behind. Apply now for free AI development support and stay ahead of the competition.
+            AI is transforming industries. Don&apos;t let your startup fall behind. Apply now for free AI development support and stay ahead of the competition.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
