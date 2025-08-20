@@ -313,9 +313,8 @@ const LandingPage = () => {
               <p className="text-sm">Building bridges between cultures and code</p>
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="hover:text-white transition">LinkedIn</a>
-              <a href="#" className="hover:text-white transition">Twitter</a>
-              <a href="#" className="hover:text-white transition">Email</a>
+              <a href="https://www.linkedin.com/in/calvinssmith/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">LinkedIn</a>
+              <a href="mailto:calvin@awana.io" className="hover:text-white transition">Email</a>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-800 text-center text-sm">
