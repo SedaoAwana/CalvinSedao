@@ -70,10 +70,15 @@ const LandingPage = () => {
           <div className="hidden md:flex space-x-6 text-sm font-medium">
             <a href="#journey" className="text-gray-700 hover:text-blue-600 transition">Journey</a>
             <a href="#services" className="text-gray-700 hover:text-blue-600 transition">Services</a>
-            <a href="#insights" className="text-gray-700 hover:text-blue-600 transition">Insights</a>
-            <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+            <a href="/ai-accelerator" className="text-gray-700 hover:text-blue-600 transition">AI Accelerator</a>
+            <a 
+              href="https://calendar.app.google/HxbCctAhuPbuxHmCA" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+            >
               Let's Talk Reality
-            </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -104,9 +109,14 @@ const LandingPage = () => {
                 Build Your Team
                 <ChevronRight className="ml-2 w-5 h-5" />
               </button>
-              <button className="px-6 py-3 border-2 border-gray-400 text-gray-700 rounded-md hover:border-blue-600 hover:text-blue-600 transition">
+              <a 
+                href="https://calendar.app.google/HxbCctAhuPbuxHmCA" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-6 py-3 border-2 border-gray-400 text-gray-700 rounded-md hover:border-blue-600 hover:text-blue-600 transition"
+              >
                 Get a Reality Check (Free)
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -221,12 +231,17 @@ const LandingPage = () => {
                 <p className="text-sm text-blue-700 font-medium mb-3">{service.subtitle}</p>
                 <p className="text-gray-700 mb-4">{service.description}</p>
                 
-                <button className={`flex items-center text-sm font-medium transition ${
-                  activeCard === index ? 'text-blue-700' : 'text-gray-600'
-                }`}>
+                <a 
+                  href="https://calendar.app.google/HxbCctAhuPbuxHmCA" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={`flex items-center text-sm font-medium transition ${
+                    activeCard === index ? 'text-blue-700' : 'text-gray-600'
+                  }`}
+                >
                   {service.cta}
                   <ChevronRight className="ml-1 w-4 h-4" />
-                </button>
+                </a>
               </div>
             ))}
           </div>
@@ -257,9 +272,14 @@ const LandingPage = () => {
             </div>
           </div>
           
-          <button className="px-8 py-4 bg-white text-slate-900 rounded-md hover:bg-slate-100 transition font-medium">
+          <a 
+            href="https://calendar.app.google/HxbCctAhuPbuxHmCA" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-white text-slate-900 rounded-md hover:bg-slate-100 transition font-medium"
+          >
             Let's Talk Reality (It's Free)
-          </button>
+          </a>
         </div>
       </section>
 
