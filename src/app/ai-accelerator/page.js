@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { ChevronRight, Zap, Users, Clock, CheckCircle, ArrowRight, Star, Target, Rocket } from 'lucide-react';
+import Header from '../../components/Header';
 
 const AIAcceleratorPage = () => {
   const [activeFAQ, setActiveFAQ] = useState(null);
@@ -28,7 +29,7 @@ const AIAcceleratorPage = () => {
       answer: "For core MVP development or building primary business functionality from scratch, please contact Calvin@awana.io directly. This program focuses on enhancing existing products with AI."
     },
     {
-      question: "What&apos;s the time commitment required?",
+      question: "What's the time commitment required?",
       answer: "Selected companies commit 2-3 hours per week for 3 months. This includes progress check-ins, answering questions, providing feedback, and removing any blockers for the students."
     }
   ];
@@ -91,23 +92,7 @@ const AIAcceleratorPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-md"></div>
-            <span className="font-bold text-xl text-gray-900">Calvin • Startup Sensei</span>
-          </div>
-          <div className="hidden md:flex space-x-6 text-sm font-medium">
-            <Link href="/" className="text-gray-700 hover:text-blue-600 transition">Home</Link>
-            <Link href="/#journey" className="text-gray-700 hover:text-blue-600 transition">Journey</Link>
-            <Link href="/#services" className="text-gray-700 hover:text-blue-600 transition">Services</Link>
-            <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-              Let&apos;s Talk Reality
-            </button>
-          </div>
-        </div>
-      </nav>
+      <Header currentPage="ai-accelerator" />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
