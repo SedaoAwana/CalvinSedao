@@ -77,7 +77,7 @@ const LandingPage = () => {
               rel="noopener noreferrer"
               className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
             >
-              Let's Talk Reality
+              Let&apos;s Talk Reality
             </a>
           </div>
         </div>
